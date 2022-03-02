@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.introduction {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.webdevelop_intro {
+    background-color: #6fd8e4;
+    padding: 10px;
+    width: 45%;
+    float: left;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.webdevelop_tasks {
+    background-color: #6fd8e4;
+    padding: 10px;
+    margin-left: 55%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
