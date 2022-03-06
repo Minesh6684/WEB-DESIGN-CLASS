@@ -1,18 +1,15 @@
 * {
     margin: 0px;
     padding: 0px;
-    background-color: #F3F8F2;
 }
 
 .header {
     text-align: center;
-    color: chocolate;
 }
 
 .introduction {
     margin: 10px;
     padding: 10px;
-    border-radius: 5px;
 }
 
 .webdevelop_intro, .webdevelop_tasks {
@@ -22,11 +19,37 @@
 }
 
 .webdevelop_intro {
-    width: 47.5%;
+    width: 40%;
     float: left;
 }
 
+.web_develop_image_sec {
+    width: 45%;
+    margin-left: 45%;
+}
+
+.web_develop_image {
+    border-radius: 5px;
+}
+
+.webdevelop_intro_heading {
+    margin: 5px 5px 10px 5px;
+}
+
+.webdevelop_intro_para {
+    margin: 5px;
+}
+
 .webdevelop_tasks {
-    margin-left: 52.5%;
     list-style-position: inside;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.webdevelop_tasks_heading {
+    margin: 5px 5px 10px 5px; 
+}
+
+.webdevelop_tasks_list {
+    line-height: 1.3;
 }
