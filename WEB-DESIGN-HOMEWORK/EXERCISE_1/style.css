@@ -2,3 +2,56 @@
     padding: 0px;
     margin: 0px;
 }
+
+header {
+    background-color: rgb(199, 199, 199);
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.introduction, .image {
+    width: 60%;
+    margin: auto;
+}
+
+.nature_nurture, .explanation, .video, .related_links {
+    width: 50%;
+    margin: auto;
+}
+
+.topic {
+    font-size: 35px;
+
+}
+
+.post_share {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.introduction, .topic, .post_share, .image, .nature_nurture, .course_link, .explanation, .explanation_heading, .explanation_para, .factors_para, .factor_list, .page_conclusion {
+    padding-top: 10px;
+}
+
+.factor_list {
+    list-style-position: inside;
+    padding: 15px;
+}
+
+.video {
+    padding: 15px 0px 15px 0px;
+}
+
+.related_links {
+    background-color: rgb(199, 199, 199);
+    padding: 15px;
+    line-height: 1.8;
+}
+
+.links {
+    text-transform: uppercase;
+    padding: 10px 0px 10px 0px;
+}
