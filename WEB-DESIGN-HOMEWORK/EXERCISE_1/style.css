@@ -1,6 +1,8 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: 3px;
 }
 
 header {
@@ -10,11 +12,25 @@ header {
     text-align: center;
     margin: 20px;
     padding: 20px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
 }
 
 .introduction, .image {
     width: 60%;
     margin: auto;
+}
+
+.image_ {
+    height: 500px;
+    width: 835px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.explanation_para, .factors_para, .page_conclusion {
+    text-align: justify;
 }
 
 .nature_nurture, .explanation, .video, .related_links {
@@ -32,9 +48,17 @@ header {
     font-size: 13px;
 }
 
-.introduction, .topic, .post_share, .image, .nature_nurture, .course_link, .explanation, .explanation_heading, .explanation_para, .factors_para, .factor_list, .page_conclusion {
+.introduction, .topic, .post_share, .image, .nature_nurture, .course_link, .explanation,  .explanation_heading, .explanation_para, .factors_para, .factor_list, .page_conclusion {
     padding-top: 10px;
 }
+
+.explanation_heading {
+    font-size: 25px;
+}
+
+.explanation_para, .factors_para, .factor_list, .page_conclusion {
+    font-size: 17px;
+} 
 
 .factor_list {
     list-style-position: inside;
@@ -42,7 +66,11 @@ header {
 }
 
 .video {
-    padding: 15px 0px 15px 0px;
+    padding: 25px 0px 25px 0px;
+}
+
+iframe {
+    border-radius: 10px;
 }
 
 .related_links {
@@ -54,4 +82,14 @@ header {
 .links {
     text-transform: uppercase;
     padding: 10px 0px 10px 0px;
+    font-weight: 600;
+}
+
+.related_links {
+    border-radius: 5px;
+
+}
+
+.explanation_heading, .capitalize, .topic {
+    text-transform: capitalize;
 }
