@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.body::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.company_name_motto {
+    padding: 50px;
+    width: 50%;
+    float: left;
+    border: 1px solid black;
+}
+
+.company_name {
+   font-size: 5em; 
+   text-align: end;
+}
+
+.company_motto {
+    font-size: 1.2em;
+    text-align: end;
+}
+
+.login_signin_area {
+    margin-left: 50%;
+    border: 1px solid black;
+}
+
+.body {
+    border: 2px solid red;
+    height: 80%;
+}
