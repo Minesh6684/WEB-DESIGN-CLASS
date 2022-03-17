@@ -6,9 +6,19 @@
 </head>
 <body>
     <h1 id="header"></h1>
+    <button onclick="test()">RUN FUNCTION</button>
     <!-- adding heading inside h1 tag using id selector-->
     <script>
         document.getElementById('header').innerHTML = "Working with Script"
+        function test() {
+            console.log("Function executed")
+        }
+
+        // Function definition using arrow function
+        const test1 = 'String'
+        const test2 = () => {
+            console.log('Function definition using arrow')
+        }
     </script>
 </body>
 </html>
