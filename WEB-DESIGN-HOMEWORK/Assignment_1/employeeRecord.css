@@ -3,11 +3,31 @@
     padding: 0;
 }
 
-#askDataFromEmployee, #employee_record{
-    border: 1px solid red;
+section {
+    margin-top: 50px;
+}
+
+header {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px 10px 20px 10px;
+    text-transform: capitalize;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+h3 {
+    border: 1px solid black;;
+    text-align: center;
+    text-transform: capitalize;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 15px;
 }
 
 #askDataFromEmployee {
+    font-family: 'Roboto Mono', monospace;
     width: 50%;
     box-sizing: border-box;
     float: left;
@@ -17,15 +37,51 @@
 #employee_record {
     margin-left: 50%;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-input, label, div {
-    border: 1px solid red;
+label, div {
+    text-transform: capitalize;
+    font-size: 20px;
+    overflow: auto;
+}
+
+td {
+    text-transform: none;
 }
 
 table, tr, td, th {
     border: 1px solid black;
     border-collapse: collapse;
+    width: 80%;
 }
 
+#dataFieldSection {
+    width: 60%;
+    margin: auto;
+}
+
+input {
+    margin: 8px;
+    width: 200px;
+    display: block;
+    float: right;
+    position: relative;
+    overflow: auto;
+}
+
+.button {
+    font-family: 'Roboto Mono', monospace;
+    text-align: right;
+}
+
+button {
+    margin: 20px 5px 20px 0;
+    width: 80px;
+    font-size: 15px;
+}
+
+header, h3, button, table, th, td, tr {
+    border-radius: 5px;
+}
 
