@@ -10,11 +10,14 @@ section {
 header {
     border: 2px solid black;
     padding: 20px;
-    margin: 20px 10px 20px 10px;
     text-transform: capitalize;
     text-align: center;
-    width: 80%;
-    margin: auto;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 80%;  /* horizontal alignment */
+    margin: 20px auto; /* horizontal alignment */
+    box-shadow: 5px 5px 5px 5px rgb(189, 189, 189);
+    border-radius: 8px;
 }
 
 h3 {
@@ -22,22 +25,32 @@ h3 {
     text-align: center;
     text-transform: capitalize;
     width: 60%;
-    margin: auto;
-    margin-bottom: 15px;
+    margin: 15px auto;
+    box-shadow: 5px 5px 5px 5px rgb(189, 189, 189);
 }
 
 #askDataFromEmployee {
     font-family: 'Roboto Mono', monospace;
-    width: 50%;
     box-sizing: border-box;
-    float: left;
+    width: 35%;
+    float: left; /* Creating space for another box horizontally */
     line-height: 2;
+    box-shadow: 5px 5px 5px 5px rgb(189, 189, 189);
 }
 
 #employee_record {
-    margin-left: 50%;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    margin-left: 42%; /* margin will allow to align side by side boxes */
+    box-sizing: border-box; /* box-size = width (including border and padding size) */
+    font-family: 'Roboto Mono', monospace;
+    box-shadow: 5px 5px 5px 5px rgb(189, 189, 189);
+}
+
+#employee_record {
+    margin-right: 60px;
+}
+
+#askDataFromEmployee {
+    margin-left: 60px;
 }
 
 label, div {
@@ -50,14 +63,24 @@ td {
     text-transform: none;
 }
 
-table, tr, td, th {
-    border: 1px solid black;
+table, tr {
     border-collapse: collapse;
-    width: 80%;
+    border: 1px solid black;
+    width: 90%;
+    margin: 10px auto;
+    table-layout: fixed;
 }
 
+td, th {
+    border: 1px solid black;
+    padding: 10px 8px;
+    overflow: scroll; /* overflowed data will not affect the table size */
+    width: 150px;
+}
+
+
 #dataFieldSection {
-    width: 60%;
+    width: 80%;
     margin: auto;
 }
 
@@ -81,7 +104,13 @@ button {
     font-size: 15px;
 }
 
-header, h3, button, table, th, td, tr {
-    border-radius: 5px;
+button:hover {
+    color: white;
+    background-color: rgb(51, 50, 50);
+    border-color: rgb(54, 243, 227);
+    cursor: pointer;
 }
 
+h3, button{
+    border-radius: 5px;
+}
