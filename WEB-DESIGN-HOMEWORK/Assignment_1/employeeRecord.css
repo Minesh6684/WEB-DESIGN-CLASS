@@ -32,8 +32,8 @@ h3 {
 #askDataFromEmployee {
     font-family: 'Roboto Mono', monospace;
     box-sizing: border-box;
-    width: 35%;
-    float: left; /* Creating space for another box horizontally */
+    width: 35%; /* form will use only 35% of the browser-window and will vacant another 65% for the table */ 
+    float: left; /* Creating space for another box horizontally to its right side */
     line-height: 2;
     box-shadow: 5px 5px 5px 5px rgb(189, 189, 189);
 }
@@ -56,7 +56,7 @@ h3 {
 label, div {
     text-transform: capitalize;
     font-size: 20px;
-    overflow: auto;
+    overflow: auto; /* to prevent inline child-elements of div and label content overflow */ 
 }
 
 td {
@@ -68,7 +68,7 @@ table, tr {
     border: 1px solid black;
     width: 90%;
     margin: 10px auto;
-    table-layout: fixed;
+    table-layout: fixed; /* preventing the table being overflowed out of browser-window */
 }
 
 td, th {
@@ -76,20 +76,20 @@ td, th {
     padding: 10px 8px;
     overflow: scroll; /* overflowed data will not affect the table size */
     width: 150px;
+    text-align: center;
 }
 
 
 #dataFieldSection {
     width: 80%;
     margin: auto;
+    overflow: auto;
 }
 
 input {
     margin: 8px;
     width: 200px;
-    display: block;
     float: right;
-    position: relative;
     overflow: auto;
 }
 
@@ -102,6 +102,7 @@ button {
     margin: 20px 5px 20px 0;
     width: 80px;
     font-size: 15px;
+    text-transform: uppercase;
 }
 
 button:hover {
@@ -113,4 +114,8 @@ button:hover {
 
 h3, button{
     border-radius: 5px;
+}
+
+#cad {
+    width: 30px;
 }
