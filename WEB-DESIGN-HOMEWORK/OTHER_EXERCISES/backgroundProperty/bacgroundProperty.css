@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    padding: 200px;
+    color: aliceblue;
+    background: 
+        url(images/hulk.jpeg)
+        top left
+}
