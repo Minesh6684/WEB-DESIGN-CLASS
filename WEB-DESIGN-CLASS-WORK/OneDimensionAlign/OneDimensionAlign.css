@@ -12,7 +12,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.container {
+.container { 
     max-width: 800px;
     background: rgb(149, 216, 247);
     margin: 100px auto;
@@ -22,7 +22,7 @@ body {
     gap: 20px;
 }
 
-.element {
+/* .element {
     background: rgb(101, 167, 141);
     padding: 10px;
     border: 1px solid black;
@@ -35,4 +35,4 @@ body {
 .element:nth-of-type(6) {
     grid-column: 1/3;
 
-}
+}  */

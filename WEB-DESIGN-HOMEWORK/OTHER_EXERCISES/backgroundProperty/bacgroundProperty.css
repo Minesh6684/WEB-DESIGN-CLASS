@@ -5,8 +5,13 @@
 
 .background {
     padding: 200px;
-    color: aliceblue;
+    color: black;
     background: 
-        url(images/hulk.jpeg)
-        top left
+        url(images/hulk.jpeg)  /* image */
+        top left / 200px 200px /* position / size */
+        no-repeat  /* repetation of image */
+        /* fixed Attachment */
+        /* padding-box origin */
+        /* content-box clip */
+        /* rgb(235, 189, 189) color */
 }
