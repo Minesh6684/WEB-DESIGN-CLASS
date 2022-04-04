@@ -1,37 +1,49 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
 }
 
-.body::after {
-    content: "";
-    clear: both;
-    display: table;
+.company_name_motto, .login_signin_area, .language_selection_area {
+    border: 1px solid black;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.8fr 0.2fr;
+    grid-template-areas: 
+        "introduction accessForm"
+        "language language";
 }
 
 .company_name_motto {
-    padding: 50px;
-    width: 50%;
-    float: left;
-    border: 1px solid black;
-}
-
-.company_name {
-   font-size: 5em; 
-   text-align: end;
-}
-
-.company_motto {
-    font-size: 1.2em;
-    text-align: end;
+    grid-area: introduction;
 }
 
 .login_signin_area {
-    margin-left: 50%;
-    border: 1px solid black;
+    grid-area: accessForm;
 }
 
-.body {
-    border: 2px solid red;
-    height: 80%;
+footer {
+    grid-area: language;
+}
+
+@media only screen and (max-width: 750px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 1.5fr 0.8fr;
+        grid-template-areas: 
+            "introduction"
+            "accessForm"
+            "language";
+    }
+}
+
+input {
+    display: block;
+}
+
+button {
+    display: block;
 }
