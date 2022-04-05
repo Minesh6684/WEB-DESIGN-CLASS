@@ -28,7 +28,7 @@ let object = [
 // c. Whose age is less than or equal to 25.
 document.write('People, whose age is less than or equal to 25:\n')
 for (let i=0; i<object.length; i++) {
-    if (object[i].Age <= 25) {
+    if (object[i].Age<= 25) {
         document.write(`\n${object[i].Name}`);
     }
 }
@@ -38,7 +38,7 @@ and store result as an array to new array
 using array.map() method */
 
 var nums = [10, 40, 50, 60];
-let newArrayOfNums = nums.map( (currentValue) => currentValue*3 );
+let newArrayOfNums = nums.map( (currentValue) => currentValue * 3);
 console.log(newArrayOfNums);
 
 /* 4.Create new array of elements,
