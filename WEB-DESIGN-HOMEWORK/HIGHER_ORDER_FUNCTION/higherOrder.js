@@ -13,19 +13,47 @@ const companies = [
 const ages = [23, 24, 25, 26, 30, 35, 27, 78, 89, 56]
 
 // Higher-Order Function - Function takes another function as parameter
-// function side() {
-//     let a = prompt('Enter size of a side A: ');
-//     let area = a*a;
-//     alert(`${area}`);
-// }
+function side() {
+    let a = prompt('Enter size of a side A: ');
+    let area = a*a;
+    alert(`${area}`);
+}
 
-// function squareArea(callback) {
-//     callback();
-// }
+function squareArea(callback) {
+    callback();
+}
 
-// squareArea(side)
+squareArea(side)
 
 /*
 array.forEach method insted of for loop 
 */
 companies.forEach((object) => console.log(object.name))
+
+/* 
+    Use of array.reduce() method
+
+    array.reduce(callback fn, initialValue)
+    --> callback fn(previousValue, currentValue, index, array) {
+        return 
+    }
+
+    return of a current callback will be previousValue of the next iteration,
+    while currentValue for the next iteration will be array element 
+*/
+
+const nums = [10, 11, 12, 13, 14]
+function reducer (previousValue, currentValue, index, array) {
+    sum = previousValue + currentValue;
+    console.log(`Previous: ${previousValue}, Current: ${currentValue}, Index: ${index}, Array: ${array}`);
+    return sum;
+}
+
+nums.reduce(reducer)
+
+/*
+    array.filter(callback fn, thisArg) method
+
+    callback fn (element, index, array) {}
+    
+*/
