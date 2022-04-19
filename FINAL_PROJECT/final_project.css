@@ -20,7 +20,7 @@ nav {
     float:left;
 }
 
-.nav-links{
+.nav-links {
     margin-left: 50%;
 }
 
@@ -49,29 +49,62 @@ main {
 }
 
 .products {
+    border: 1px solid red;
+    color: black;
     grid-area: products;
     display: grid;
-    height: 80vh;
+    height: 100vh;
+    align-items: start;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 'product1 product2 product3';
-    grid-gap: 20px;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas: 
+        'product_heading'
+        'product1 product2 product3';
+    gap: 10px;
 }
 
-.product1 {
+.product_heading {
+    grid-area: product_head;
+}
+
+a {
+    border: 1px solid yellow;
+}
+
+.tuna_ {
     border: 1px solid black;
     grid-area: product1;
+    height: 70vh;
+    background-image: url(/images/products/tuna.jpg);
+    background-position: top left;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
 
+.tuna:hover {
+    background-size: 500px;
 }
 
 .product2 {
     border: 1px solid black;
     grid-area: product2;
+    background-image: url(/images/products/octo.jpg);
+    /* background-attachment: */
 }
 
 .product3 {
     border: 1px solid black;
     grid-area: product3;
+    background-image: url(/images/products/crab.jpg);
+}
+
+.email_form {
+    display: block;
 }
 
 .footer {

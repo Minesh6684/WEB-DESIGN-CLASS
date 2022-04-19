@@ -27,16 +27,33 @@
         </p>
     </main>
     <section class="products">
+        <h3 class="product_heading">products</h3>
         <div class="product1">
-            <!-- <a href=""><img src="images/products/tuna.jpg" alt="" class="tuna"></a> -->
+            <a  class="tuna_" href="">tuna</a>
         </div>
         <div class="product2">
-            <!-- <a href=""><img src="images/products/octo.jpg" alt="" class="octo"></a> -->
+            <a class="octo_" href="">octopo</a>
         </div>
         <div class="product3">
-            <!-- <a href=""><img src="images/products/crab.jpg" alt="" class="crab"></a> -->
+            <a class="crab_" href="">crabby</a>
         </div>
     </section>
+    <div class="contact_us">
+        <h3>contact us</h3>
+        <form action="http://postmail.invotes.com/send"
+    method="post" id="email_form">
+
+            <input type="text" name="subject" placeholder="Subject" />
+            <textarea name="text" placeholder="Message"></textarea>
+            <input type="hidden" name="access_token" value="abc123" />
+
+            <input type="hidden" name="success_url" value="." />
+            <input type="hidden" name="error_url" value=".?err=1" />
+
+            <input id="submit_form" type="submit" value="Send" />
+    
+        </form>
+    </div>
     <footer class="footer">
         footer section
     </footer>
