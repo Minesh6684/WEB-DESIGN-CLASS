@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/61201149d8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="final_project.css">
+    <link rel="stylesheet" href="form_style.css">
     <title>WeDesign</title>
 </head>
 <body>
@@ -29,14 +30,31 @@
     <section class="products">
         <h3 class="product_heading">products</h3>
         <div class="products_images">
-            <a  class="tuna_" href="file:///Users/minesh/Desktop/TAV/SEM_2/WEB-DESIGN/WEB-DESIGN-CLASS/FINAL_PROJECT/final_project.html"><img  class="tuna_image" src="images/products/tuna.jpg" alt=""></a>
-            <a class="prawns_" href="file:///Users/minesh/Desktop/TAV/SEM_2/WEB-DESIGN/WEB-DESIGN-CLASS/FINAL_PROJECT/final_project.html"><img class="prawns_image" src="images/products/prawns.jpg" alt=""></a>
-            <a class="crab_" href="file:///Users/minesh/Desktop/TAV/SEM_2/WEB-DESIGN/WEB-DESIGN-CLASS/FINAL_PROJECT/final_project.html"><img   class="crab_image" src="images/products/crab.jpg" alt=""></a>
+            <a  class="tuna_" href="#"><img  class="tuna_image" src="images/products/tuna_1.jpg" alt=""><div class="tuna_text">Tuna</div></img></a>
+            <a class="prawns_" href="#"><img class="prawns_image" src="images/products/prawns.jpg" alt=""></img><div class="prawns_text">Prawns</div></a>
+            <a class="crab_" href="#"><img   class="crab_image" src="images/products/crab.jpg" alt=""></img><div class="crab_text">Crab</div></a>
         </div>
     </section>
     <div class="contact_us">
         <h3>contact us</h3>
+        <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+
+            <input type="text" name="subject" placeholder="Subject" required/>
+            <input type="text" name='full_name' placeholder="Full Name" required>
+            <input type="email" name="extra_email_address" placeholder="E-mail Address" required />
+            <textarea name="text" id="message" placeholder="Message" required></textarea>
+            <input type="hidden" name="access_token" value="ch6t2aib2a4gztfh9phutxmg" />
+              <!-- return urls can be fully qualified -OR-
+                 start with / for root relative -OR-
+                 start with . for url relative --> 
+            <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+            <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+        
+            <input type="hidden" name="sms_format" value="true" />
+            <input id="submit_form" type="submit" value="Send" />
+        </form>
     </div>
+
     <footer class="footer">
         <div class="moto_footer">
             <h2>Stay Hungry</h2>
@@ -56,5 +74,7 @@
             <p>FishOn is leading industry providing ready to cook seafood.</p>
         </div>
     </footer>
+
+    <script src="final_project.js"></script>
 </body>
 </html>
