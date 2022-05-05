@@ -13,6 +13,10 @@ nav {
     padding: 20px 30px;
     font-size: 20px;
     background-color: black;
+    font-family: Arial, Helvetica, sans-serif ;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .company_name, .fa-solid.fa-otter {
@@ -22,17 +26,30 @@ nav {
 a {
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 main {
     grid-area: main;
-    background-image: url(./images/main_background.jpg);
+    background-image: url(./images/main/pexels-amy-chandra-754734.jpg);
     background-position: top left;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 800px;
     color: black;
+}
+
+main h2 {
+    position: absolute;
+    bottom: 50%;
+    left: 47%;
+}
+
+main p {
+    position: absolute;
+    bottom: 45%;
+    left: 40%;
 }
 
 .motto {
@@ -48,6 +65,7 @@ main {
 }
 
 .products_images {
+    
     display: grid;
     padding: 30px 70px 0 70px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -85,7 +103,7 @@ main {
 .tuna_image, .prawns_image, .crab_image {
     border-radius: 10px;
     max-width: 100%;
-    height: 85vh;
+    height: 70vh;
     /* margin: 0 auto; */
     
     /* max-height: 100%; */
@@ -102,10 +120,68 @@ main {
     margin-top: 50px;
 }
 
-.footer {
-    grid-area: footer;
-    height: 300px;
+.footer_ {
+    margin-top: 30px;
+    height: 30vh;
     background-color: black;
     color: white;
-    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.name {
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.follow_us {
+    margin-top: 10px;
+    width: 30%;
+    float: left;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.follow_us h4{
+    margin-bottom: 10px;
+}
+
+.follow_us a{
+    font-size: 30px;
+}
+
+.fa-brands:hover {
+    color: #F46036;
+}
+
+.about_footer {
+    margin-top: 10px;
+    margin-left: 30%;
+    text-align: center;
+    width: 30%;
+    border: 1px solid red;
+}
+
+.address {
+    margin-top: 10px;
+    white-space: pre-line;
+}
+
+.operation_time {
+    border: 1px solid red;
+    float: right;
+    width: 30%;
+    margin-left: 60%;
+}
+
+hr {
+    margin-top: 25px;
+}
+
+.rights_reserved {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 15px;
 }
