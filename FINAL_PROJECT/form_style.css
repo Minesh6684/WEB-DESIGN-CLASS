@@ -7,7 +7,7 @@
 input {
     display: block;
     height: 35px;
-    width: 573px;
+    width: 100%;
     text-align: center;
     /* width: 150px;
     float: left; */
@@ -17,7 +17,7 @@ input {
 textarea {
     display: block;
     height: 70px;
-    width: 573px;
+    width: 100%;
     text-align: center;
     /* width: 150px;
     float: left; */
@@ -26,7 +26,7 @@ textarea {
 
 #email_form {
     /* float: right; */
-    width: 40%;
+    width: 50%;
     margin: auto;
 }
 
@@ -36,7 +36,6 @@ textarea {
     background-color: rgb(179, 178, 178);
     border: 0px;
     color: white;
-    padding: 30px;
 }
 
 .about_text {

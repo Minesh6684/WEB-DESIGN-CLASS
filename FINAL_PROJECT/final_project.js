@@ -27,3 +27,13 @@ function displayTabContent(tab) {
         displayTab.textContent = 'pratistha';
     }
 }
+
+// SERVICES SECTION
+
+function moveServicetabs() {
+    const service_details = document.querySelectorAll('.service_detail')
+    for (let i=0; i<service_details.length; i++){
+        service_details[i].style.display = 'none';
+    }
+    // service_details.forEach(element => element.style.display = 'none'); 
+}

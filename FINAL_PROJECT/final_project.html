@@ -16,9 +16,9 @@
             <span class="company_name">FishOn</span>
         </div>
         <div class="nav_links">
-            <span class="about"><a href="">about</a></span>
-            <span class="services"><a href="">services</a></span>
-            <span class="contact"> <a href="">contact</a></span>
+            <span class="about"><a href="#nav2">about</a></span>
+            <span class="services"><a href="#nav3">services</a></span>
+            <span class="contact"> <a href="#nav4">contact</a></span>
         </div>
     </nav>
     <main>
@@ -27,7 +27,7 @@
             From Ocean
         </p>
     </main>
-    <section class="about_us">
+    <section class="about_us" id="nav2">
         <h3>about us</h3>
         <div class="mvv">
             <button class="about_us_tab mission" onclick="displayTabContent('mission')">mission</button>
@@ -36,69 +36,75 @@
         </div>  
         <p class="about_text"></p>
     </section>
-    <section class="services_section">
+    <section class="services_section" id="nav3">
         <h3>services</h3>
-        <p>
-            <span>&lt;</span>
-            <span></span>
-            <span>&gt;</span>
-        </p>
-    </section>
-    <section class="products">
-        <h3 class="product_heading">products</h3>
-        <div class="products_images">
-            <a  class="tuna_" href="#"><img  class="tuna_image" src="images/products/tuna_1.jpg" alt=""><div class="tuna_text">Tuna</div></img></a>
-            <a class="prawns_" href="#"><img class="prawns_image" src="images/products/prawns.jpg" alt=""></img><div class="prawns_text">Prawns</div></a>
-            <a class="crab_" href="#"><img   class="crab_image" src="images/products/crab.jpg" alt=""></img><div class="crab_text">Crab</div></a>
+        <div class="service_tab">
+            <button>&lt;</button>
+            <span>home delivery</span>
+            <button>&gt;</button>
         </div>
     </section>
-    <div class="contact_us">
-        <h3>contact us</h3>
-        <form action="https://postmail.invotes.com/send" method="post" id="email_form">
-            
-            <input type="text" name="subject" placeholder="Subject" required/>
-            <input type="text" name='full_name' placeholder="Full Name" required>
-            <input type="email" name="extra_email_address" placeholder="E-mail Address" required />
-            <textarea name="text" id="message" placeholder="Message" required></textarea>
-            <input type="hidden" name="access_token" value="ch6t2aib2a4gztfh9phutxmg" />
-            <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
-            <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
-            
-            <input type="hidden" name="sms_format" value="true" />
-            <input id="submit_form" type="submit" value="Send" />
-            
-        </form>
-    </div>
+    <div class="pro_con_foot">
+        <section class="products">
+            <h3 class="product_heading">products</h3>
+            <div class="products_images">
+                <a  class="tuna_" href="#"><img  class="tuna_image" src="images/products/tuna_1.jpg" alt=""><div class="tuna_text">Tuna</div></img></a>
+                <a class="prawns_" href="#"><img class="prawns_image" src="images/products/prawns.jpg" alt=""></img><div class="prawns_text">Prawns</div></a>
+                <a class="crab_" href="#"><img   class="crab_image" src="images/products/crab.jpg" alt=""></img><div class="crab_text">Crab</div></a>
+            </div>
+        </section>
+        <div class="contact_us" id="nav4" border="red">
+            <h3>contact us</h3>
+            <form action="https://postmail.invotes.com/send" method="post" id="email_form">
 
-    <footer class="footer_">
-        <div class="name">
-            <i class="fa-solid fa-otter"></i>
-            <span class="company_name">FishOn</span>
+                <input type="text" name="subject" placeholder="Subject" required/>
+                <input type="text" name='full_name' placeholder="Full Name" required>
+                <input type="email" name="extra_email_address" placeholder="E-mail Address" required />
+                <textarea name="text" id="message" placeholder="Message" required></textarea>
+                <input type="hidden" name="access_token" value="ch6t2aib2a4gztfh9phutxmg" />
+                <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+
+                <input type="hidden" name="sms_format" value="true" />
+                <input id="submit_form" type="submit" value="Send" />
+
+            </form>
         </div>
-        <div class="follow_us">
-            <h4>follow us</h4>
-            <a href="https://www.instagram.com/minesh_6684/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100071707069283&sk" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://twitter.com/minesh_6684" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
-        </div>
-        <div class="about_footer">
-            <h4>location</h4>
-            <p class="address">6333, decarie boulevard, 
-montreal, QC canada H3W 3E1
-            </p>
-        </div>
-        <div class="operation_time">
-            <h4>operational time</h4>
-            <p>monday - tuesday: 09:00 - 17:00</p>
-            <p>friday - sunday: 09:00 - 13:00</p>
-        </div>
-        <hr/>
-        <div class="rights_reserved">
-            <span>2019-2022</span>
-            <i class="fa-solid fa-copyright"></i>
-            <span>all rights reserved</span>
-        </div>
-    </footer>
+
+        <footer class="footer_">
+            <div class="name">
+                <i class="fa-solid fa-otter"></i>
+                <span class="company_name">FishOn</span>
+            </div>
+            <div class="second_row">
+                <div class="operation_time">
+                    <h4>operational time</h4>
+                    <p>monday - tuesday: 09:00 - 17:00</p>
+                    <p>friday - sunday: 09:00 - 13:00</p>
+                </div>
+
+                <div class="follow_us">
+                    <h4>follow us</h4>
+                    <a href="https://www.instagram.com/minesh_6684/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100071707069283&sk" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/minesh_6684" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                </div>
+
+                <div class="about_footer">
+                    <h4>location</h4>
+                    <p class="address">6333, decarie boulevard, 
+                        montreal, QC canada H3W 3E1
+                    </p>
+                </div>
+            </div>
+            <hr/>
+            <div class="rights_reserved">
+                <span>2019-2022</span>
+                <i class="fa-solid fa-copyright"></i>
+                <span>all rights reserved</span>
+            </div>
+        </footer>
+    </div>
 
     <script src="final_project.js"></script>
 </body>
