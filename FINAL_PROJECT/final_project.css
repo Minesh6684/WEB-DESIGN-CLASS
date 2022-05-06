@@ -5,22 +5,6 @@
     text-transform: capitalize;
 }
 
-/* body {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.2fr 1fr 0.3fr 0.3fr 1fr 0.6fr 0.5fr;
-    grid-template-areas: 
-        'navbar navbar navbar',
-        'main main main',
-        'about about about',
-        'service service service',
-        'products products products',
-        'contact contact contact',
-        'footer footer footer';
-    grid-gap: 5px;
-} */
-
 nav {
     grid-area: navbar;
     display: flex;
@@ -35,6 +19,22 @@ nav {
     z-index: 1;
 }
 
+.fa-bars {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu_checkbox {
+    display: none;
+}
+
+.nav_links span {
+    font-size: 17px;
+    margin: 0 5px;
+}
+
 .company_name, .fa-solid.fa-otter {
     color: white;
 }
@@ -43,6 +43,11 @@ a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+a:hover, .fa-bars:hover {
+    color: #F46036;
+    transition: 0.3s;
 }
 
 main {
@@ -177,6 +182,7 @@ main p {
 
 .fa-brands:hover {
     color: #F46036;
+    transition: 0.5s;
 }
 
 .about_footer {
@@ -278,7 +284,38 @@ hr {
     .operation_time {
         grid-column: 2/3;
         grid-row: 2/3;
+    } 
+    
+    /* Hamburger Button*/
+    .logo_name {
+        font-size: 16px;
+    }
+
+    .nav_links span{
+        font-size: 16px;
+        transition: 0.3s;
+        display: block;
+        padding: 10px 200px;
+        text-align: center;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+
+    .nav_links{
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        height: 100vh;
+        background-color: black;
+    }
+
+    #menu_checkbox:checked ~ .nav_links {
+        right: 0;
+        transition: all 0.3s;
     }
 
     
+
 }
