@@ -13,8 +13,6 @@ input {
     height: 35px;
     width: 100%;
     text-align: center;
-    /* width: 150px;
-    float: left; */
     border: 1px solid black;
     border-radius: 5px ;
     margin-bottom: 12px;
@@ -25,13 +23,10 @@ textarea {
     height: 70px;
     width: 100%;
     text-align: center;
-    /* width: 150px;
-    float: left; */
     margin-bottom: 12px;
 }
 
 #email_form {
-    /* float: right; */
     width: 50%;
     margin: auto;
 }
@@ -93,24 +88,16 @@ textarea {
     line-height: 50px;
 }
 
-/* carousel CSS*/
-
-/* .services_section {
-    text-align: center;
-} */
 
 .carousel {
     background-color: black;
     color: white;
     height: 15vh;
     margin: 15px 80px 0 80px;
-    position: relative;
-}
-
-.carousel > ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 35px 0;
+    font-size: 20px;
 }
 
 .slide {
@@ -127,21 +114,12 @@ textarea {
 }
 
 .carousel-button {
-    position: relative;
+    font-size: 35px;
     z-index: 2;
     background: none;
-    top: 40%;
     border: none;
     color: white;
     cursor: pointer;
-}
-
-.carousel-button.prev {
-    left: 40px;
-}
-
-.carousel-button.next {
-    left: 1200px;
 }
 
 
