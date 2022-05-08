@@ -10,30 +10,50 @@ form.addEventListener("submit", function (e) {
 
 // TAB FUNCTIONALITY
 
-const displayTab = document.querySelector('.about_text')
+const displayTab = document.querySelector('.about_text');
 
 function displayTabContent(tab) {
-    const tabColor = document.querySelector(`.${tab}`);
+    const tabColorVision = document.querySelector('.vision');
+    const tabColor_mission = document.querySelector('.mission');
+    const tabColorValue = document.querySelector('.value');
     if(tab === 'mission') {
-        tabColor.style.backgroundColor = 'black';
-        displayTab.textContent = 'Objective of the organization is to ';
+        tabColor_mission.style.backgroundColor = 'black';
+        tabColorVision.style.backgroundColor = 'rgb(179, 178, 178)';
+        tabColorValue.style.backgroundColor = 'rgb(179, 178, 178)';
+        displayTab.textContent = 'Objective of the organization is to provide fresh-cut meat from Ocean';
     }
     else if(tab === 'vision') {
-        tabColor.style.backgroundColor = 'black';
+        tabColor_mission.style.backgroundColor = 'rgb(179, 178, 178)';
+        tabColorVision.style.backgroundColor = 'black';
+        tabColorValue.style.backgroundColor = 'rgb(179, 178, 178)';
         displayTab.textContent = 'On the basis';
     }
     if(tab === 'value') {
-        tabColor.style.backgroundColor = 'black';
+        tabColor_mission.style.backgroundColor = 'rgb(179, 178, 178)';
+        tabColorVision.style.backgroundColor = 'rgb(179, 178, 178)';
+        tabColorValue.style.backgroundColor = 'black';
         displayTab.textContent = 'pratistha';
     }
 }
 
 // SERVICES SECTION
 
-function moveServicetabs() {
-    const service_details = document.querySelectorAll('.service_detail')
-    for (let i=0; i<service_details.length; i++){
-        service_details[i].style.display = 'none';
-    }
-    // service_details.forEach(element => element.style.display = 'none'); 
-}
+const carouselButton = document.querySelectorAll('.carousel-button');
+const content = document.querySelectorAll('[data-slides]');
+carouselButton.forEach(element => {
+    element.addEventListener('click', () => {
+        let activeSlide = document.querySelector('.slide.active');
+        let activeSlideIndex = parseInt(activeSlide.id);
+        const indexChange = element.className === 'carousel-button prev' ? -1 : 1;
+        let newIndex = activeSlideIndex + indexChange;
+        if (newIndex === 0 || newIndex === 4) {
+            return 0
+        }
+        else {
+            let newId = (newIndex).toString();
+            let newActiveSlide = document.getElementById(newId)
+            newActiveSlide.className = 'slide active'
+            activeSlide.className = 'slide';
+        }
+    })
+});

@@ -12,8 +12,10 @@
 <body>
     <nav class="navbar">
         <div class="logo_name">
-            <i class="fa-solid fa-otter"></i>
-            <span class="company_name">FishOn</span>
+            <a href="#nav2">
+                <i class="fa-solid fa-otter"></i>
+                <span class="company_name">FishOn</span>
+            </a>
         </div>
         <input type="checkbox" id="menu_checkbox">
         <label for="menu_checkbox"><i class="fa-solid fa-bars"></i></label>
@@ -26,33 +28,37 @@
     </nav>
     <main>
         <h2>FishOn</h2>
-        <p class="motto">We Deliver the best of the food,
+        <p class="motto" id="nav2">We Deliver the best of the food,
             From Ocean
         </p>
     </main>
-    <section class="about_us" id="nav2">
+    <section class="about_us">
         <h3>about us</h3>
-        <div class="mvv">
+        <div class="mvv" id="nav3">
             <button class="about_us_tab mission" onclick="displayTabContent('mission')">mission</button>
             <button class="about_us_tab vision" onclick="displayTabContent('vision')">vision</button>    
             <button class="about_us_tab value" onclick="displayTabContent('value')">value</button>
         </div>  
         <p class="about_text"></p>
     </section>
-    <section class="services_section" id="nav3">
+    <section class="services_section">
         <h3>services</h3>
-        <div class="service_tab">
-            <button>&lt;</button>
-            <span>home delivery</span>
-            <button>&gt;</button>
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&lt;</button>
+            <button class="carousel-button next" data-carousel-button="next">&gt;</button>
+            <ul data-slides>
+                <li class="slide active" id="1">service1</li>
+                <li class="slide" id="2">service2</li>
+                <li class="slide" id="3">service3</li>
+            </ul>
         </div>
     </section>
     <div class="pro_con_foot">
         <section class="products">
             <h3 class="product_heading">products</h3>
             <div class="products_images">
-                <a  class="tuna_" href="#"><img  class="tuna_image" src="images/products/tuna_1.jpg" alt=""><div class="tuna_text">Tuna</div></img></a>
-                <a class="prawns_" href="#"><img class="prawns_image" src="images/products/prawns.jpg" alt=""></img><div class="prawns_text">Prawns</div></a>
+                <a  class="tuna_" href="#"><img  class="tuna_image" src="images/products/salmon.jpg" alt=""><div class="tuna_text">Salmon</div></img></a>
+                <a class="prawns_" href="#"><img class="prawns_image" src="images/products/prawn.jpg" alt=""><div class="prawns_text">Prawns</div></img></a>
                 <a class="crab_" href="#"><img   class="crab_image" src="images/products/crab.jpg" alt=""></img><div class="crab_text">Crab</div></a>
             </div>
         </section>
@@ -76,8 +82,10 @@
 
         <footer class="footer_">
             <div class="name">
-                <i class="fa-solid fa-otter"></i>
-                <span class="company_name">FishOn</span>
+                <a href="#">
+                    <i class="fa-solid fa-otter"></i>
+                    <span class="company_name">FishOn</span>
+                </a>
             </div>
             <div class="second_row">
                 <div class="operation_time">
@@ -103,7 +111,7 @@
             <hr/>
             <div class="rights_reserved">
                 <span>2019-2022</span>
-                <i class="fa-solid fa-copyright"></i>
+                &copy;
                 <span>all rights reserved</span>
             </div>
         </footer>
