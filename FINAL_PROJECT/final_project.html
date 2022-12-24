@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/61201149d8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="final_project.css">
-    <link rel="stylesheet" href="form_style.css">
+    <link rel="stylesheet" href="styles/final_project.css">
+    <link rel="stylesheet" href="styles/form_style.css">
     <title>FishOn</title>
 </head>
 <body>
@@ -60,16 +60,16 @@
         <h3>services</h3>
         <div class="carousel" data-carousel>
 
-            <button class="prev carousel-button" data-carousel-button="prev"><i class="fa-solid fa-less-than"></i></button> <!-- button to get previous service content -->
-                <!-- Service contents -->
-                <!-- id to all span are given to convert it into integer and use it as an index of respective span to display them again throung converting it to id -->
-                <span class="slide active" id="1">Meals curation by an in-house chef, using only the freshest ingredients sourced from local suppliers in a zero-waste facility.</span>
-                <span class="slide" id="2">FishOn takes pride in delivering the highest quality, perfectly portioned ready-to-eat meals right to your door!</span>
-                <span class="slide" id="3">We are always spearheading community initiatives like shoreline cleanups, donations, and scholarship opportunities.</span>
-            <button class="next carousel-button" data-carousel-button="next"><i class="fa-solid fa-greater-than"></i></button> <!-- button to get next service content -->
+            <div class="prev carousel-button" data-carousel-button="prev"><</div> <!-- button to get previous service content -->
+            <!-- Service contents -->
+            <!-- id to all span are given to convert it into integer and use it as an index of respective span to display them again throung converting it to id -->
+            <div class="slide active" id="1">Meals curation by an in-house chef, using only the freshest ingredients sourced from local suppliers in a zero-waste facility.</div>
+            <div class="slide" id="2">FishOn takes pride in delivering the highest quality, perfectly portioned ready-to-eat meals right to your door!</div>
+            <div class="slide" id="3">We are always spearheading community initiatives like shoreline cleanups, donations, and scholarship opportunities.</div>
+            <div class="next carousel-button" data-carousel-button="next">></div> <!-- button to get next service content -->
        
         </div>
-    </section>
+    </section>  
 
     <!-- Section for Products, Contact Form, Footer -->
     <div class="pro_con_foot">
@@ -79,9 +79,9 @@
             <h3 class="product_heading">products</h3>
             <div class="products_images">
                 <!-- Product images -->
-                <a  class="tuna_" href="#"><img  class="salmon_image" src="images/products/salmon.jpg" alt=""><div class="tuna_text">Salmon</div></img></a>
-                <a class="prawns_" href="#"><img class="prawns_image" src="images/products/prawn.jpg" alt=""><div class="prawns_text">Prawns</div></img></a>
-                <a class="crab_" href="#"><img   class="crab_image" src="images/products/crab.jpg" alt=""></img><div class="crab_text">Crab</div></a>
+                <a class="tuna_" href="#"><img  class="salmon_image" src="images/products/salmon.jpg" alt=""><div class="tuna_text">Salmon</div></a>
+                <a class="prawns_" href="#"><img class="prawns_image" src="images/products/prawn.jpg" alt=""><div class="prawns_text">Prawns</div></a>
+                <a class="crab_" href="#"><img   class="crab_image" src="images/products/crab.jpg" alt=""><div class="crab_text">Crab</div></a>
             </div>
         </section>
 
@@ -143,10 +143,9 @@
                 </div>
             </div>
 
-            <hr/>
-
             <!-- Copyright Section -->
             <div class="rights_reserved">
+                <hr/>
                 <span>2019-2022</span>
                 &copy;
                 <span>all rights reserved</span>
@@ -155,6 +154,6 @@
         </footer>
     </div>
 
-    <script src="final_project.js"></script>
+    <script src="scripts/final_project.js"></script>
 </body>
 </html>
